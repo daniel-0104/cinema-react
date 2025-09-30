@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function Home() {
+export default function Ticket() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Ticket</Text>
     </View>
   );
 }

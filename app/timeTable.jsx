@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-export default function Home() {
+export default function TimeTable() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>TimeTable</Text>
     </View>
   );
 }
