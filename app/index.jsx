@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import ThemeView from "../components/ThemeView";
+import ThemeText from "../components/ThemeText";
 
 export default function Home() {
   return (
-    <View style={styles.container}>
-      <Text>Home</Text>
-    </View>
+    <ThemeView style={styles.container}>
+      <ThemeText>Home</ThemeText>
+    </ThemeView>
   );
 }
 

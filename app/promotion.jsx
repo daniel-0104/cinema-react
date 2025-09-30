@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import ThemeView from "../components/ThemeView";
+import ThemeText from "../components/ThemeText";
 
 export default function Promotion() {
   return (
-    <View style={styles.container}>
-      <Text>Promotions</Text>
-    </View>
+    <ThemeView style={styles.container}>
+      <ThemeText>Promotions</ThemeText>
+    </ThemeView>
   );
 }
 

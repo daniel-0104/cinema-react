@@ -1,10 +1,16 @@
 export const Colors = {
   dark: {
-    background: "#0a0f1c",
-    text: "#fff",
+    body: "#0a0f1c",
+    navBackground: "#192231",
+    title: "#fff",
+    textColor: "#fff",
+    textColorFocus: "#FFD700",
   },
   light: {
-    background: "rgb(247, 247, 247)",
-    text: "#000000",
+    body: "rgb(247, 247, 247)",
+    navBackground: "#ffffff",
+    title: "#201e2b",
+    textColor: "#696565",
+    textColorFocus: "#E9A319",
   },
 };

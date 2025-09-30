@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import ThemeView from "../components/ThemeView";
+import ThemeText from "../components/ThemeText";
 
 export default function Ticket() {
   return (
-    <View style={styles.container}>
-      <Text>Ticket</Text>
-    </View>
+    <ThemeView style={styles.container}>
+      <ThemeText>Ticket</ThemeText>
+    </ThemeView>
   );
 }
 
