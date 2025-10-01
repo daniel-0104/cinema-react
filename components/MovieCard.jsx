@@ -1,25 +1,40 @@
-import { Link } from "expo-router";
-import { Image, StyleSheet, TouchableOpacity } from "react-native";
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  StyleSheet,
+  FlatList,
+} from "react-native";
 
-export default function MovieCard() {
+export default function MovieCard({ title, poster_path }) {
   return (
-    <Link href="">
-      <TouchableOpacity>
-        <Image
-          source={require("../assets/image/sonic3.png")}
-          style={styles.image}
-          resizeMode="cover"
-        />
-      </TouchableOpacity>
-    </Link>
+    <TouchableOpacity style={styles.card}>
+      <Image
+        source={{
+          uri: `https://image.tmdb.org/t/p/w500${poster_path}`,
+        }}
+        style={styles.image}
+      />
+      <Text style={styles.title}>{title}</Text>
+    </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
+  card: {
+    marginRight: 15,
+    width: 120,
+  },
   image: {
-    width: 100,
-    height: 200,
-    objectFit: "cover",
-    borderRadius: 5,
+    width: 120,
+    height: 180,
+    borderRadius: 8,
+  },
+  title: {
+    marginTop: 5,
+    fontSize: 12,
+    textAlign: "center",
   },
 });
