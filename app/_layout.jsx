@@ -2,6 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { StatusBar, useColorScheme } from "react-native";
 import { Colors } from "../constants/Colors";
+import "./global.css";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();

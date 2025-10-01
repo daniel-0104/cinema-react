@@ -21,6 +21,7 @@ export default function Home() {
         keyExtractor={(item) => item.id.toString()}
         horizontal
         showsHorizontalScrollIndicator={false}
+        style={styles.cardList}
       />
     </ThemeView>
   );
@@ -30,5 +31,8 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 50,
     paddingHorizontal: 15,
+  },
+  cardList: {
+    marginTop: 15,
   },
 });

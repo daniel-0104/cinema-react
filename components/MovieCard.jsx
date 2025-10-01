@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  StyleSheet,
-  FlatList,
-} from "react-native";
+import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
+import ThemeText from "./ThemeText";
 
 export default function MovieCard({ title, poster_path }) {
   return (
@@ -17,7 +11,7 @@ export default function MovieCard({ title, poster_path }) {
         }}
         style={styles.image}
       />
-      <Text style={styles.title}>{title}</Text>
+      <ThemeText style={styles.title}>{title}</ThemeText>
     </TouchableOpacity>
   );
 }
